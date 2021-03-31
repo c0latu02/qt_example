@@ -11,8 +11,10 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -22,6 +24,10 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QPushButton *btnGetAllPersons;
+    QPushButton *btnGetPerson;
+    QPushButton *btnGetFullname;
+    QLabel *labelResult;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -32,9 +38,22 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        btnGetAllPersons = new QPushButton(centralwidget);
+        btnGetAllPersons->setObjectName(QString::fromUtf8("btnGetAllPersons"));
+        btnGetAllPersons->setGeometry(QRect(30, 60, 131, 101));
+        btnGetPerson = new QPushButton(centralwidget);
+        btnGetPerson->setObjectName(QString::fromUtf8("btnGetPerson"));
+        btnGetPerson->setGeometry(QRect(30, 180, 131, 101));
+        btnGetFullname = new QPushButton(centralwidget);
+        btnGetFullname->setObjectName(QString::fromUtf8("btnGetFullname"));
+        btnGetFullname->setGeometry(QRect(30, 310, 131, 101));
+        labelResult = new QLabel(centralwidget);
+        labelResult->setObjectName(QString::fromUtf8("labelResult"));
+        labelResult->setGeometry(QRect(270, 110, 91, 131));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
+        menubar->setGeometry(QRect(0, 0, 800, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -48,6 +67,10 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        btnGetAllPersons->setText(QCoreApplication::translate("MainWindow", "Kaikki asiakkaat", nullptr));
+        btnGetPerson->setText(QCoreApplication::translate("MainWindow", "yksi asiakas", nullptr));
+        btnGetFullname->setText(QCoreApplication::translate("MainWindow", "koko nimi", nullptr));
+        labelResult->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
     } // retranslateUi
 
 };

@@ -222,6 +222,7 @@ Makefile: ../qt_frontend/qt_frontend.pro C:/Qt/5.15.0/mingw81_32/mkspecs/win32-g
 		C:/Qt/5.15.0/mingw81_32/mkspecs/features/qt_config.prf \
 		C:/Qt/5.15.0/mingw81_32/mkspecs/win32-g++/qmake.conf \
 		C:/Qt/5.15.0/mingw81_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		C:/Qt/5.15.0/mingw81_32/mkspecs/features/exclusive_builds.prf \
 		C:/Qt/5.15.0/mingw81_32/mkspecs/features/toolchain.prf \
 		C:/Qt/5.15.0/mingw81_32/mkspecs/features/default_pre.prf \
@@ -248,9 +249,9 @@ Makefile: ../qt_frontend/qt_frontend.pro C:/Qt/5.15.0/mingw81_32/mkspecs/win32-g
 		../qt_frontend/qt_frontend.pro \
 		C:/Qt/5.15.0/mingw81_32/lib/Qt5Widgets.prl \
 		C:/Qt/5.15.0/mingw81_32/lib/Qt5Gui.prl \
+		C:/Qt/5.15.0/mingw81_32/lib/Qt5Network.prl \
 		C:/Qt/5.15.0/mingw81_32/lib/Qt5Core.prl \
 		C:/Qt/5.15.0/mingw81_32/lib/qtmain.prl \
-		.qmake.stash \
 		C:/Qt/5.15.0/mingw81_32/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ../qt_frontend/qt_frontend.pro -spec win32-g++ CONFIG+=debug CONFIG+=qml_debug
 C:/Qt/5.15.0/mingw81_32/mkspecs/features/spec_pre.prf:
@@ -405,6 +406,7 @@ C:/Qt/5.15.0/mingw81_32/mkspecs/features/qt_functions.prf:
 C:/Qt/5.15.0/mingw81_32/mkspecs/features/qt_config.prf:
 C:/Qt/5.15.0/mingw81_32/mkspecs/win32-g++/qmake.conf:
 C:/Qt/5.15.0/mingw81_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 C:/Qt/5.15.0/mingw81_32/mkspecs/features/exclusive_builds.prf:
 C:/Qt/5.15.0/mingw81_32/mkspecs/features/toolchain.prf:
 C:/Qt/5.15.0/mingw81_32/mkspecs/features/default_pre.prf:
@@ -431,9 +433,9 @@ C:/Qt/5.15.0/mingw81_32/mkspecs/features/lex.prf:
 ../qt_frontend/qt_frontend.pro:
 C:/Qt/5.15.0/mingw81_32/lib/Qt5Widgets.prl:
 C:/Qt/5.15.0/mingw81_32/lib/Qt5Gui.prl:
+C:/Qt/5.15.0/mingw81_32/lib/Qt5Network.prl:
 C:/Qt/5.15.0/mingw81_32/lib/Qt5Core.prl:
 C:/Qt/5.15.0/mingw81_32/lib/qtmain.prl:
-.qmake.stash:
 C:/Qt/5.15.0/mingw81_32/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../qt_frontend/qt_frontend.pro -spec win32-g++ CONFIG+=debug CONFIG+=qml_debug
