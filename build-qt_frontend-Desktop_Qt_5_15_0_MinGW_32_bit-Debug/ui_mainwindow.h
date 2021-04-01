@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -28,6 +29,7 @@ public:
     QPushButton *btnGetPerson;
     QPushButton *btnGetFullname;
     QLabel *labelResult;
+    QLineEdit *lineEditId;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -40,22 +42,28 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         btnGetAllPersons = new QPushButton(centralwidget);
         btnGetAllPersons->setObjectName(QString::fromUtf8("btnGetAllPersons"));
-        btnGetAllPersons->setGeometry(QRect(30, 60, 131, 101));
+        btnGetAllPersons->setGeometry(QRect(190, 50, 131, 101));
         QFont font;
         font.setPointSize(12);
         btnGetAllPersons->setFont(font);
         btnGetPerson = new QPushButton(centralwidget);
         btnGetPerson->setObjectName(QString::fromUtf8("btnGetPerson"));
-        btnGetPerson->setGeometry(QRect(30, 180, 131, 101));
+        btnGetPerson->setGeometry(QRect(190, 170, 131, 101));
         btnGetPerson->setFont(font);
         btnGetFullname = new QPushButton(centralwidget);
         btnGetFullname->setObjectName(QString::fromUtf8("btnGetFullname"));
-        btnGetFullname->setGeometry(QRect(30, 310, 131, 101));
+        btnGetFullname->setGeometry(QRect(190, 300, 131, 101));
         btnGetFullname->setFont(font);
         labelResult = new QLabel(centralwidget);
         labelResult->setObjectName(QString::fromUtf8("labelResult"));
-        labelResult->setGeometry(QRect(270, 110, 361, 171));
+        labelResult->setGeometry(QRect(350, 60, 431, 171));
         labelResult->setFont(font);
+        lineEditId = new QLineEdit(centralwidget);
+        lineEditId->setObjectName(QString::fromUtf8("lineEditId"));
+        lineEditId->setGeometry(QRect(40, 180, 101, 81));
+        QFont font1;
+        font1.setPointSize(14);
+        lineEditId->setFont(font1);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));

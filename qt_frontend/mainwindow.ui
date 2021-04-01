@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="btnGetAllPersons">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>60</y>
+      <x>190</x>
+      <y>50</y>
       <width>131</width>
       <height>101</height>
      </rect>
@@ -35,8 +35,8 @@
    <widget class="QPushButton" name="btnGetPerson">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>180</y>
+      <x>190</x>
+      <y>170</y>
       <width>131</width>
       <height>101</height>
      </rect>
@@ -53,8 +53,8 @@
    <widget class="QPushButton" name="btnGetFullname">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>310</y>
+      <x>190</x>
+      <y>300</y>
       <width>131</width>
       <height>101</height>
      </rect>
@@ -71,9 +71,9 @@
    <widget class="QLabel" name="labelResult">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>110</y>
-      <width>361</width>
+      <x>350</x>
+      <y>60</y>
+      <width>431</width>
       <height>171</height>
      </rect>
     </property>
@@ -84,6 +84,21 @@
     </property>
     <property name="text">
      <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditId">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>101</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
     </property>
    </widget>
   </widget>
