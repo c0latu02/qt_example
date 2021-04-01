@@ -5,6 +5,7 @@
 #include <QtNetwork>
 #include <QNetworkAccessManager>
 #include <QJsonDocument>
+//#include <QDebug>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,8 +21,11 @@ public:
 
 private slots:
     void on_btnGetAllPersons_clicked();
+    void allPersonsSlot(QNetworkReply *reply);
 
 private:
     Ui::MainWindow *ui;
+    QNetworkAccessManager *allPersonsManager;
+    QNetworkReply *allPersonsReply;
 };
 #endif // MAINWINDOW_H
